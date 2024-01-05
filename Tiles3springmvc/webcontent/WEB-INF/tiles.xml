@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="modiBaba" template="/WEB-INF/jsp/modi/mlayout.jsp">
+<put-attribute name="modih" value="/WEB-INF/jsp/modi/mh.jsp"/>
+<put-attribute name="modim" value="/WEB-INF/jsp/modi/mm.jsp"/>
+<put-attribute name="modib" value="/WEB-INF/jsp/modi/mb.jsp"/>
+<put-attribute name="modif" value="/WEB-INF/jsp/modi/mf.jsp"/>
+</definition>
+
+
+<definition name="adminBaba" template="/WEB-INF/jsp/admin/alayout.jsp">
+<put-attribute name="ah" value="/WEB-INF/jsp/admin/ah.jsp"/>
+<put-attribute name="am" value="/WEB-INF/jsp/admin/am.jsp"/>
+<put-attribute name="ab" value=""/>
+<put-attribute name="af" value="/WEB-INF/jsp/admin/af.jsp"/>
+</definition>
+
+
+<definition name="userBaba" template="/WEB-INF/jsp/usr/ulayout.jsp">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uh.jsp"/>
+<put-attribute name="um" value="/WEB-INF/jsp/usr/um.jsp"/>
+<put-attribute name="ub" value=""/>
+<put-attribute name="uf" value="/WEB-INF/jsp/usr/uf.jsp"/>
+</definition>
+
+<definition name="open" extends="modiBaba">
+
+</definition>
+
+
+<definition name="log" extends="modiBaba">
+
+<put-attribute name="modib" value="/WEB-INF/jsp/login.jsp"/>
+</definition>
+
+
+<definition name="ulog" extends="userBaba">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uhh.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/W.jsp"/>
+</definition>
+
+<definition name="view" extends="userBaba">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uhh.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/jsp/view.jsp"/>
+</definition>
+
+<definition name="B" extends="userBaba">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uhh.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/B.jsp"/>
+</definition>
+
+<definition name="E" extends="userBaba">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uhh.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/E.jsp"/>
+</definition>
+
+<definition name="reg" extends="userBaba">
+<put-attribute name="uh" value="/WEB-INF/jsp/usr/uhh.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/jsp/reg.jsp"/>
+</definition>
+
+
+<definition name="alog" extends="adminBaba">
+<put-attribute name="ah" value="/WEB-INF/jsp/admin/ahh.jsp"/>
+<put-attribute name="ab" value="/WEB-INF/W.jsp"/>
+</definition>
+
+
+</tiles-definitions>
